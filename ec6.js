@@ -129,3 +129,54 @@ class Bird extends Animal {
  bird.walk(); 
  bird.fly();
  
+let myname='lastname'
+const name={
+  firstname:'NIZEYIMANA',
+  middlename:'aime',
+  [myname]:'thierry'
+}
+console.log(`myname is ${name.firstname}  ${name.middlename}  ${name.lastname}`)
+
+// inhertance
+
+class Student
+{
+  constructor(name)
+  {
+    this.name=name;
+  }
+ sname()
+ {
+  console.log('this is student')
+ }
+}
+class Urstudent extends Student
+{
+  constructor(name ,reg_number)
+  {
+    super (name);
+    this.reg_number=reg_number
+
+  }
+  display()
+  {
+    console.log('this is ur student')
+  }
+}
+let student= new Urstudent('thierry')
+console.log(`${student.name} and  ${student.sname()}`)
+let add= function(a,b)
+{
+  return a*b
+}
+let product = add(10,20)
+console.log(`the product is ${product}`)
+let add = (x, y) =>{ return x + y}
+console.log(add(10, 20))
+
+let names=['aime','thierry']
+let length= names.map(name=>(name.length))
+console.log(length)
+
+let logDoc = () => console.log('welcome');
+logDoc();
